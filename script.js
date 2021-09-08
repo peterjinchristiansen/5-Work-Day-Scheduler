@@ -67,7 +67,6 @@ $('#description17').click(function(){
 });
 
 $('#save9').click(function(){
-    alert(arr9);
     localStorage.setItem('arr9', arr9);
 })
 
@@ -125,25 +124,25 @@ function colorCode(currentTime) {
 }
 
 function grabPreviousEvents() {
-    arr9 = JSON.parse(localStorage.getItem('arr9')) || [];
-    arr10 = JSON.parse(localStorage.getItem('arr10')) || [];
-    arr11 = JSON.parse(localStorage.getItem('arr11')) || [];
-    arr12 = JSON.parse(localStorage.getItem('arr12')) || [];
-    arr13 = JSON.parse(localStorage.getItem('arr13')) || [];
-    arr14 = JSON.parse(localStorage.getItem('arr14')) || [];
-    arr15 = JSON.parse(localStorage.getItem('arr15')) || [];
-    arr16 = JSON.parse(localStorage.getItem('arr16')) || [];
-    arr17 = JSON.parse(localStorage.getItem('arr17')) || [];
-    alert(arr9);
+
+    var arr9 = localStorage.getItem('arr9');
+    var arr10 = localStorage.getItem('arr10');
+    var arr11 = localStorage.getItem('arr11');
+    var arr12 = localStorage.getItem('arr12');
+    var arr13 = localStorage.getItem('arr13');
+    var arr14 = localStorage.getItem('arr14');
+    var arr15 = localStorage.getItem('arr15');
+    var arr16 = localStorage.getItem('arr16');
+    var arr17 = localStorage.getItem('arr17');
+
+    $("#description9").append(arr9);
+    $("#description10").append(arr10);
+    $("#description11").append(arr11);
+    $("#description12").append(arr12);
+    $("#description13").append(arr13);
+    $("#description14").append(arr14);
+    $("#description15").append(arr15);
+    $("#description16").append(arr16);
+    $("#description17").append(arr17);
 
 }
-
-/*    $("#description9").append(arr9);
-$("#description10").append(arr10);
-$("#description11").append(arr11);
-$("#description12").append(arr12);
-$("#description13").append(arr13);
-$("#description14").append(arr14);
-$("#description15").append(arr15);
-$("#description16").append(arr16);
-$("#description17").append(arr17); */
