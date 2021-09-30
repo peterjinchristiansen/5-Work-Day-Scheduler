@@ -110,11 +110,12 @@ function getCurrentDate() {
 }
 
 function colorCode(currentTime) {
+    console.log(currentTime)
     var currentTimeNum = parseInt(currentTime);
     for(i = 0; i < descriptionClass.length; i++) {
         if(currentTimeNum > i + 9) {
             $(descriptionClass[i]).addClass('past');
-        } else if(currentTimeNum = i + 9) {
+        } else if(currentTimeNum === i + 9) {
             $(descriptionClass[i]).addClass('present');
         } else {
             $(descriptionClass[i]).addClass('future');
