@@ -4,7 +4,7 @@
   
 ## Description
   
-This project is designed to help the user schedule their day. They can easily add obligations to their work schedule and save it to local storage, and it will persist upon refresh.
+    This project is designed to help the user schedule their day. They can easily add obligations to their work schedule and save it to local storage, and it will persist upon refresh.
 
 ---
   
